@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+background-color:black;
+}
+.body
+{   
+    background-image: url("../background.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#board
+{
+    background:rgb(74, 255, 14);
+    opacity: 1;
+    border: black 2px solid;
+    border-radius: 20px;
+    width:80vmin;
+    height:90vmin;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head
+{
+    background: rgb(46, 80, 46);
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.snake
+{
+    background: rgb(137, 184, 137);
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.food
+{
+    background: url(/Screenshot\ 2021-08-17\ at\ 12.45.16\ PM.jpeg);
+    background-position-x:-17px;
+    background-position-y: -3px;
+    background-size: 70px;
+}
+#score
+{
+    color: ivory;
+    position: absolute;
+    top:10%;
+    right:15%;
+    font-size: 40px;
+    font-family: 'DotGothic16', sans-serif;
+}
+footer
+{
+    color: white;
+    position: absolute;
+    bottom:0px;
+    margin-left: 45%;
+    background-color: black;
+    font-family: 'DotGothic16', sans-serif;
+}
